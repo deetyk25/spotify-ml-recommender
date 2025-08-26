@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Auth Redirect</title>
+</head>
+<body>
+  <h2>Spotify Authentication Successful</h2>
+  <p>Copy this entire URL and paste it into your terminal when asked:</p>
+  <pre id="url"></pre>
+
+  <script>
+    document.getElementById("url").innerText = window.location.href;
+  </script>
+</body>
+</html>
