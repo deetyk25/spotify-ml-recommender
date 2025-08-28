@@ -66,3 +66,18 @@ for item in recently_played['items']:
 df_recent = pd.DataFrame(track_songs)
 print(df_recent.head())
 save_csv_with_spaces(df_recent, "recently_played.csv")
+
+public_playlists = sp.current_user_playlists(limit=50)
+playlist_data = []
+for item in public_playlists['items']:
+    playlist_data.append({
+        "Playlist Name": item['name'],
+        "Owner": item['owner']['display_name'],
+        "Tracks Count": item['tracks']['total'],
+        "Href": item['href']
+    })
+
+df_playlists = pd.DataFrame(playlist_data)
+print(df_playlists.head())
+save_csv_with_spaces(df_playlists, "my_playlists.csv")
+
