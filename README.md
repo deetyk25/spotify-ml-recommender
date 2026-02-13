@@ -43,7 +43,7 @@ CSV output files are saved as:
 ranked_recommendations_<taste_mode>.csv
 
 ## Project Structure
-.
+.  
 ├── main.py                  # CLI entrypoint  
 ├── spotify_client.py        # Spotify authentication helper  
 ├── data_loader.py           # Fetch top tracks and playlist tracks  
