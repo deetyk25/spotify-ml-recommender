@@ -43,13 +43,14 @@ CSV output files are saved as:
 ranked_recommendations_<taste_mode>.csv
 
 ## Project Structure
-.  
-├── main.py                  # CLI entrypoint  
-├── spotify_client.py        # Spotify authentication helper  
-├── data_loader.py           # Fetch top tracks and playlist tracks  
-├── recommender.py           # Build user profile and rank candidates  
-├── utils.py                 # Helper functions (CSV formatting)  
-└── requirements.txt         # Dependencies  
+.
+├── main.py                # CLI entrypoint
+├── spotify_client.py      # Spotify authentication helper
+├── data_loader.py         # Fetch top tracks and playlist tracks
+├── recommender.py         # Build user profile and rank candidate songs
+├── utils.py               # Helper functions (e.g., CSV formatting)
+├── requirements.txt       # Python dependencies
+└── .env                   # Spotify credentials (not committed)
 
 ## Next Steps
 - Build a GUI: Provide a user-friendly interface so users can select options and view recommendations without using the command line.
