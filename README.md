@@ -17,7 +17,7 @@ top_n – number of recommendations to show/save (10–50)
 ## Installation
 1. Clone the repository
 
-git clone https://github.com/deetyk25/spotify-ml-recommender.git
+git clone https://github.com/deetyk25/spotify-ml-recommender
 
 cd spotify-ml-recommender
 
